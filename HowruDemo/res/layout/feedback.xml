@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.howrudemo.MainActivity" >
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newactback"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/feedbacktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="write something?" 
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+             >
+
+            <Button
+                android:id="@+id/feedbackcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="feedbackcancel"
+                android:text="cancel" />
+
+            <Button
+                android:id="@+id/feedbacksubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit" 
+                android:onClick="feedbacksubmit"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

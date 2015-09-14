@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.howrudemo.MainActivity" >
+
+    <Button
+        android:id="@+id/newactback"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="back" 
+        android:onClick="newactback"
+        />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/leftbutton"
+        android:layout_alignBottom="@+id/leftbutton"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:ems="10"
+        android:hint="message" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newactback"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/acttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="acttype" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="date" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="48"
+            android:progress="0"
+             />
+
+        <TextView
+            android:id="@+id/showquota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/composedone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="composedone"
+            android:text="done" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/actname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newactback"
+        android:layout_below="@+id/newactback"
+        android:ems="10"
+        android:hint="actname" />
+
+</RelativeLayout>
